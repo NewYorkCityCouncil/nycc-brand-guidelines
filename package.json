@@ -1,0 +1,32 @@
+{
+  "name": "nycc-brand-guidelines",
+  "version": "1.0.0",
+  "description": "Digital brand guidelines for New York City Council",
+  "main": "index.html",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newyorkcitycouncil/nycc-brand-guidelines.git"
+  },
+  "bugs": {
+    "url": "https://github.com/newyorkcitycouncil/nycc-brand-guidelines/issues",
+    "email": "labs@council.nyc.gov"
+  },
+  "author": "andycochran",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+  }
+}
