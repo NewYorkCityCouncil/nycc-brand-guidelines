@@ -88,7 +88,44 @@ code {
     }
 }
 
+.main-navigation {
+  position: relative;
+  z-index: 2;
+  ol > li {
+    margin-bottom: 0.25rem;
+  }
+  ul {
+    display: none;
+  }
+  li {
+    position: relative;
+  }
+  @include breakpoint(medium) {
+    .active + ul {
+      display: block;
+    }
+    a:not(.active):hover + ul,
+    a:not(.active) + ul:hover {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 100%;
+      background-color: #fff;
+      padding: 0.5rem 0.75rem;
+      width: 11rem;
+      border: 1px solid $light-gray;
+      box-shadow: -5px 5px 0 rgba($black, 0.25);
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
 #main {
+  position: relative;
+  z-index: 1;
   padding-bottom: 6rem;
 }
 
